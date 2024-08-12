@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Vuelos</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <div class="logoDiv">
+          <img class="block_img"  src="../assets/images/logo200.png" alt="logo">
+            </div>   
+        </div>
+
+        <div id="EmpresaTitulo">
+            <p>Volarte - Agencia de Viajes</p>
+        </div>
+              
+        <nav class="menu-nav">
+            <ul class="lista-nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/paquetes.html">Paquetes</a></li>
+                <li><a href="../pages/vuelos.html">Vuelos</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+           </ul>    
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+        
+        <section class="secdestacadosBlog"><p class="tit textizq" >Consulta de Vuelos</p></section>
+                  
+        
+        <!-- <section class="vueloform"> -->
+            <section class="vueloform">
+                <div>
+                    <form action="validar.php" method="post" enctype="multipart/form-data" class="vuelosfrm">
+                        <div>
+                            <!-- <h2 class="contactoTit">Consulta de Vuelos Disponibles</h2> -->
+                        </div>
+                    <fieldset>
+                            <legend></legend>
+                            <div><label for="partida">Lugar de Partida</label></div>
+                            <div><input id ="partida" name="partida" type="text" placeholder="Desde donde Partira?" minlength="6" maxlength="50" required autofocus autocomplete="off" class="inpform"></div>
+                            <div><label for="destino">Lugar de Destino</label></div>
+                            <div><input id ="destino" name="destino" type="text" placeholder="Destino" minlength="6" maxlength="50" required autofocus autocomplete="off" class="inpform"></div>
+                        <fieldset>
+                            <!-- genero divs paa agrupar fechas -->
+                            <div><p></p></div>
+                            <div class="fecpartida">
+                                <div><label for="fecpartida">Fecha de Partida</label></div>
+                                <div><input id ="fecpartida" name="fecpartida" type="date" required class="inpform"></div>
+                            </div>
+                            <div class="fecregreso">
+                                 <div><label for="fecregreso">Fecha de Regreso</label> </div>
+                                 <div><input id ="fecregreso" name="fecregreso" type="date"  required class="inpform"></div>
+                            </div>
+                            <!-- fin de div para fechas -->
+                        </fieldset>
+                            <br>
+                            <fieldset>
+                                <div><label>Informacion Adicional</label></div>
+                                
+                                <div class="fecpartida">
+                                    <div><label for="adultos">Adultos</label></div>
+                                        <div><select name="adultos" id="adultos">
+                                                <option value="1">Uno</option>
+                                                <option value="2">Dos</option>
+                                                <option value="3">Tres</option>
+                                                <option value="4">Cuatro</option>
+                                        </select></div>
+                                </div>
+                                <div class="fecregreso">
+                                    <div><label for="menores">Menores</label></div>
+                                        <div><select name="ninos" id="ninos">
+                                            <option value="1">Uno</option>
+                                            <option value="2">Dos</option>
+                                            <option value="3">Tres</option>
+                                            <option value="4">Cuatro</option>
+                                        </select></div>
+                                </div>
+                            </fieldset><br>
+                            <div>
+                                <fieldset>
+                                    <legend>Enviar formulario</legend>
+                                    <input id="enviar" type="submit" value="Enviar" class="inpform inpverde">
+                                    <legend>Resetar el formulario</legend>
+                                    <input id="reset" type="reset" value="Reset" class="inpform inprojo" >
+                                </fieldset>
+                            </div>
+                            <div class="flogocenter"  >
+                                <img class="frmblock_img"  src="../assets/images//logo200.png" alt="logo">
+                            </div>
+                            <div >
+                               <p class="frmnomemp">Volarte</p>       
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+       
+        
+        <section class="vueloimg">
+            <div class="secimg">
+                <img src="../assets/images/paneldevuelos.png" alt="plan de vuelos" width="100%" height="100%">
+            </div>
+        </section> 
+        
+
+
+
+
+        
+
+
+
+
+
+    </main>
+
+
+
+    <footer>
+        <!-- div para logo e info de empresa -->
+            <div class="pielogodiv">
+                <div class="logoDiv" >
+                    <img class="fblock_img"  src="../assets/images//logo200.png" alt="logo">
+                </div>
+            </div>
+            
+            <div class="pieDivs">
+                <div>
+                   <p class="piefonts">Volarte - Agencia de Viajes</p>       
+                   <p>Telefonos: 2628 4569 - 099 654235</p>
+                   <p>Email: volarte@volarte.com</p>   
+                </div>
+            </div>
+    
+            <!-- div para copiright -->
+            <div class="pieDivs">
+                <p class="copyright">@2024 Volarte - Agencia de Viajes</p>
+           </div>
+    
+           <!-- div para resde sociales -->
+           <div class="pieDivs">
+                    <p class="tituloRedes">Redes Sociales</p>
+                        <div class="logoRedesSociales">
+                             <a href="https://www.whatsapp.com" target="_blank">
+                            <img class="iconosRedes" src="../assets/icons/whatsapp.png" alt="Whatsapp">
+                            </a>
+                        </div>
+    
+                    <div class="logoRedesSociales">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="iconosRedes" src="../assets/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+    
+                    <div class="logoRedesSociales">
+                        <a href="https://x.com/?lang=es" target="_blank">
+                            <img class="iconosRedes" src="../assets/icons/twiter.png" alt="X (ex twiter)">
+                        </a>
+                    </div>
+    
+                    <div class="logoRedesSociales">
+                        <a href="https://www.instagram.com/" target="_blank"> 
+                            <img class="iconosRedes" src="../assets/icons/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+            </div>
+        </footer>
+    
+    
+</body>
+</html>

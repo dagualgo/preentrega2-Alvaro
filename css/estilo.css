@@ -1,0 +1,672 @@
+
+/*Reset del Documento (vuelvo a cero el documento*/
+* {
+    margin: 0;
+    padding: 0;  
+    
+}
+
+
+
+/*Fin del Reset del Documento*/
+
+/*Agrego fuente*/
+@font-face { 
+  font-family: "PlaywriteAR"; 
+  src: url("../assets/fonts/Playwrite_AR/PlaywriteAR-VariableFont_wght.ttf"); 
+} 
+
+/*******body - *******/
+body{
+    width: 99vw;
+    height: 100vh;
+  }
+
+/****ESTILOS ENCABEZADO (header)****/
+header {
+   
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    top: 0;
+    
+    background-color: rgb(9, 89, 136);
+  
+  }
+
+
+
+/*dentro del header van 2 div (log y nombre empresa) y un nav */
+/*logo para header y footer*/
+
+  
+  /*div para el logo*/
+  .logo {
+    width: 33.333%;
+    height: 100%;   
+    float: left; 
+   /* overflow: hidden;*/
+  }
+
+
+
+  .block_img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    align-content: center;  
+    }
+
+
+/*div para Nombre Empresa*/
+#EmpresaTitulo{
+    display: inline-block;
+    width: 33%;
+    height: 100%; 
+    font-family: "PlaywriteAR";
+    text-align: center;
+    align-content:center;
+    /*background-color: aqua;*/
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: #ffffff;
+    /*overflow: hidden;*/
+   }
+
+
+    /*menu nav*/
+ .menu-nav {
+    width: 33%;
+    height: 100%;
+    float: right;
+    align-content: end;
+    text-align: right;
+    
+    /*overflow: hidden;*/
+   }
+
+
+.lista-nav li{
+  display: inline-block;
+  margin:  10px;
+  
+}
+
+.lista-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+
+/****ESTILOS PAGINA PRINCIPAL (main)****/
+
+main {
+    width: 100%;
+    height: 100%;
+    /*background-color: lightseagreen;*/
+    /*overflow: scroll*/
+}
+
+.secdestacados{
+  width: 70%;
+  height: 4%;
+ /* background-color:burlywood;*/
+  margin: 0;
+  align-content: center; /*este aling content me genera la linea blanca entre blog y header*/
+  float: left;
+  }
+
+ 
+
+.secpaquetes{
+  width: 30%;
+  height: 4%;
+  /*background-color: dimgray;*/
+  margin: 0;
+  align-content: center;
+  float: right;
+}
+
+
+/*se crean 6 section que seran lo principal del main*/
+.secOpcionDestacados{
+
+    width: 35%;
+    height: 48%;
+   /* background-color: blueviolet;*/
+    /*border-color: darkblue;
+    border-width: 1px;
+    border-style:solid;*/
+    /*box-sizing: border-box;*/
+    text-align: center;
+    float: left;
+   
+}
+
+
+
+.secOpcionPaquetes{
+  width: 30%;
+  height: 48%;
+ /* background-color:coral;
+  border-color: black;
+  border-width: 1px;
+    border-style:solid;*/
+    box-sizing: border-box;
+    text-align: center;
+  float: right;
+}
+
+
+/*estilo de los titulos en los divs (Destacado y Ofertas*/
+.tit{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  background-color: rgb(9, 89, 136);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: darkgray;
+
+}
+
+/*estilo de titulos  "Destacados y Paquetes del index"*/
+.titulodespaq {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightskyblue;
+ 
+}
+
+.sectionlugares{
+  width: 50%;
+  height: 90%;
+  background-color:rgba(224, 255, 255, 0.096);
+  float: left;
+}
+
+/*imagenes que van dentro de los sections*/
+.imgdentro{
+  width: 100%;
+  height: 100%;
+  margin: 2px 0px 0px 5px;
+  border: 2px solid #333;
+  align-content: center;
+ 
+}
+
+.sectioninfolugares{
+  width: 40%;
+  height: 90%;
+  background-color:lavenderblush;
+  padding: 1px;
+  text-align: left;
+  overflow-y: scroll;
+  padding-left: 5px;
+  float: right;
+}
+
+
+
+
+
+
+/****ESTILOS PIE DE PAGINA (footer)****/
+
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(9, 89, 136);    
+    /*position: relative;*/
+}
+
+/*para el footer genero 3 div iguales*/
+/*div ocupa todo el espacio*/
+.futdiv{
+  width: 100%;
+  height: 10%;
+}
+
+.pieDivs{  
+    display: inline-block;
+    width: 31%;
+    height: 10%;
+    
+}
+
+.pielogodiv{
+  display: inline-block;
+  width: 6%;
+  height: 100%;
+}
+
+/*div para logo para poder centrar y otras yerbas*/
+
+.logoDiv{
+  width: 80px;
+  height: 80px;
+ 
+}
+
+
+
+.fblock_img{
+  /*display: inline-block;*/
+  width: 100%;
+  height: 100%;
+  /*align-content: center;*/  
+  }
+
+
+/*div para info empresa para borrar*/
+.infoEmpresa{
+  /*background-color: yellow;*/
+  /*display: inline-block;*/
+  /*font-size: 1rem;*/
+  /*background-color: aqua;*/
+ /* margin-top: 2%;
+  margin-right: 45%;*/
+  /*float: right;*/
+  
+
+}
+
+.piefonts{
+  font-family: "PlaywriteAR";
+  font-size: 1rem;
+  font-style: oblique;
+  color: #ffffff;
+  
+}
+
+.copyright{
+  display: inline-block;
+  /*margin-top: 70%;*/
+  text-align:center;
+  
+  /*padding: 70px 0;*/
+  
+}
+
+.tituloRedes{
+  text-align: right;
+   /*text-align:center*/
+   margin-right: 60px;
+   /*margin-top: 30px;*/
+ 
+}
+
+
+/*divs de los iconos de redes sociales*/
+.logoRedesSociales{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: right;
+ /* background-color: chocolate;
+  border-color: black;
+  border-style: dashed; */
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+
+ float: right;
+}
+
+.iconosRedes{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+
+
+/*estilo para Blog*/
+
+/*titulo del blog*/
+.secdestacadosBlog{
+  width: 100%;
+  height: 6%;
+  align-content: center; 
+  /*este aling content me genera la linea blanca entre blog y header*/
+  /*padding: 20px;*/
+  
+  
+  }
+
+
+/*se crean 4 section que para el blog*/
+.secOpcionDestacadosBlog{
+
+  width: 98%;
+  height: 28%;
+  /*align-content: center;*/
+  margin-left: 5px;
+	margin-right: 5%;
+  background-color:lightgreen;
+  border-color: darkblue;
+  border-width: 1px;
+  border-style:solid;
+  /*box-sizing: border-box;*/
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/*div para imagen o video*/
+.divblogima{
+  width: 15%;
+  height: 65%;
+  margin-top: 5px;
+  margin-left: 20px;
+  /*background-color:lightblue;*/
+  /*margin: 5px;*/
+  /*border: 1px solid #333;*/
+  /*display: inline-block;*/
+  float: left;
+}
+
+/*informacion texto*/
+.divbloginfo{
+  width: 80%;
+  height: 70%;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: lemonchiffon;
+  float: right;
+  text-align: left;
+  overflow-y: scroll;
+  /*margin-right: 10px;*/
+  border: 2px solid #333;
+  
+ 
+
+}
+
+
+
+
+.textizq{
+  text-align: left;
+  margin: 0px;
+  padding: 5px;
+}
+
+/*estilo paquetes*/
+
+/*se crean 6 section que seran lo principal del main*/
+.secPaq{
+
+  width: 50%;
+  height: 48%;
+ /* background-color: blueviolet;*/
+  /*border-color: darkblue;
+  border-width: 1px;
+  border-style:solid;*/
+  /*box-sizing: border-box;*/
+  text-align: center;
+  float: left;
+ 
+}
+
+
+
+
+
+.sectionpaq{
+  width: 20%;
+  height: 90%;
+  background-color:rgba(224, 255, 255, 0.096);
+  float: left;
+}
+
+
+
+.titpaquetes{
+  width: 100%;
+  height: 4%;
+ /* background-color:burlywood;*/
+  margin: 0;
+  align-content: center; /*este aling content me genera la linea blanca entre blog y header*/
+  float: left;
+  }
+
+
+
+  .secdestacadosB{
+    width: 70%;
+    height: 4%;
+   /* background-color:burlywood;*/
+    margin: 0;
+    align-content: center; /*este aling content me genera la linea blanca entre blog y header*/
+    float: left;
+    }
+  
+
+
+
+    
+
+ 
+/*estilo formulario*/
+
+form.contactofrm{
+  width: 600px;
+  height: 800px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  box-sizing:border-box;
+  border-radius: 10px;
+}
+
+
+
+/*estilo h2  titulo contacto*/
+
+h2.contactoTit{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+ }
+
+/*estilo de textarea e inputs*/
+input.inpform, textarea.textareafrm {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+} 
+
+textarea.textareaminmaxfrm{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+input.inpverde{
+  
+
+  background-color: darkgreen;
+}
+
+input.inprojo{
+
+  background-color:darkred;
+}
+
+.fset{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    
+   
+  }
+
+ 
+  div.flogocenter{
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    text-align: center;
+  
+    
+  }
+
+ img.frmblock_img{
+    width: 80px;
+    height: 80px;
+    }
+
+    p.frmnomemp{
+      font-family: "PlaywriteAR";
+      font-size: 1.5rem;
+      font-style: oblique;
+      color: #ffffff;
+      text-align: center;
+    }
+
+
+ 
+  /*para borrar*/
+  
+  /*
+  .ifrm{
+    width: 90%;
+    margin-left: 20px;
+  }
+    */
+
+  
+ 
+
+
+  /*ESTILO VUELOS*/
+
+  .vueloform{
+    width: 60%;
+    height: 90%;
+    /*background-color: blueviolet;*/
+    /*border-color: darkblue;*/
+    /*border-width: 1px;*/
+    /*border-style:solid;*/
+    box-sizing: border-box;
+    align-content: center;
+    float: left;
+ 
+  }
+
+  .vueloimg{
+    width: 40%;
+    height: 90%;
+    /*background-color: blueviolet;*/
+    /*border-color: darkblue;*/
+    /*border-width: 1px;*/
+    /*border-style:solid;*/
+    box-sizing: border-box;
+    align-content: center;
+    float: left;
+ 
+  }
+
+  .secimg{
+
+    width: 90%;
+    height: 90%;
+    /*background-color: aqua;*/
+    border-color: brown;
+    border-style: solid;
+    margin: auto;
+    
+    
+  }
+
+/*ESTILO  FORM VUELOS*/
+form.vuelosfrm{
+  width: 100%;
+  height: 100%;
+  /*margin: auto;*/
+  
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  box-sizing:border-box;
+  border-radius: 10px;
+}
+
+/*estilo h2  titulo contacto*/
+
+h2.contactoTit{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+ }
+
+/*estilo de textarea e inputs*/
+input.inpform, textarea.textareafrm  option.opform{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+} 
+
+textarea.textareaminmaxfrm{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+
+
+fieldset.margen{
+
+  margin-top: 50px;;
+}
+
+input.inpverde{
+   background-color: darkgreen;
+}
+
+input.inprojo{
+
+  background-color:darkred;
+}
+
+/********************************/
+
+div.fecpartida{
+  display: inline-block;
+  width: 49%;
+  height: 50px;
+  float: left;
+}
+
+div.fecregreso{
+  display: inline-block;
+  width: 49%;
+  height: 50px;
+  text-align: right;
+  float: right;
+}
+

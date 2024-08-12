@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logoDiv">
+          <img
+            class="block_img"
+            src="../assets/images/logo200.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+
+      <div id="EmpresaTitulo">
+        <p>Volarte - Agencia de Viajes</p>
+      </div>
+
+      <nav class="menu-nav">
+        <ul class="lista-nav">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../pages/paquetes.html">Paquetes</a></li>
+          <li><a href="../pages/vuelos.html">Vuelos</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div>
+            <form action="varlidar.php" method="get" enctype="multipart/form-data" class="contactofrm">
+                <!-- <div>
+                    <h2 class="contactoTit">Contacto</h2>
+                </div> -->
+
+                <fieldset>
+                    <div class="inpform">
+                        <legend>Ingrese los datos</legend>              
+                            <div>
+                                <label for="nombre" class="frmtextarea">Nombre:</label>
+                                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su Nombre" minlength="4" maxlength="20" required autofocus autocomplete="off" class="inpform">
+                            </div>
+                            <div>
+                                <label for="apellido" class="frmtextarea">Apellido:</label>
+                                <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" minlength="4" maxlength="20" required autofocus autocomplete="off" class="inpform">
+                            </div>
+                            <div>
+                                <label for="mail" class="frmtextarea">Correo Electronico</label>
+                                <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required class="inpform">
+                            </div>
+                            <div>
+                                <label for="tel" class="frmtextarea">Telefono</label>
+                                <input id="tel" name="tel" type="tel" placeholder="2568 896899 - 099 568742" required class="inpform">
+                            </div>
+                    </div>    
+                </fieldset>
+
+                <fieldset>
+                        <legend>Comentarios</legend>
+                        <textarea name="comentario" id="comentario"  placeholder="Ingrese su Comenario" class="textareaminmaxfrm"></textarea>
+                </fieldset>
+
+            <div>
+                <fieldset>
+                       <legend>Enviar formulario</legend>
+                            <input id="enviar" type="submit" value="Enviar" class="inpform inpverde">
+                            <legend>Resetar el formulario</legend>
+                            <input id="reset" type="reset" value="Reset" class="inpform inprojo" >
+                        </fieldset>
+            </div>
+
+            <div class="flogocenter"  >
+                    <img class="frmblock_img"  src="../assets/images//logo200.png" alt="logo">
+            </div>
+            <div >
+                    <p class="frmnomemp">Volarte</p>       
+            </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <!-- div para logo e info de empresa -->
+      <div class="pielogodiv">
+        <div class="logoDiv">
+          <img
+            class="fblock_img"
+            src="../assets/images//logo200.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+
+      <div class="pieDivs">
+        <div>
+          <p class="piefonts">Volarte - Agencia de Viajes</p>
+          <p>Telefonos: 2628 4569 - 099 654235</p>
+          <p>Email: volarte@volarte.com</p>
+        </div>
+      </div>
+
+      <!-- div para copiright -->
+      <div class="pieDivs">
+        <p class="copyright">@2024 Volarte - Agencia de Viajes</p>
+      </div>
+
+      <!-- div para resde sociales -->
+      <div class="pieDivs">
+        <p class="tituloRedes">Redes Sociales</p>
+        <div class="logoRedesSociales">
+          <a href="https://www.whatsapp.com" target="_blank">
+            <img
+              class="iconosRedes"
+              src="../assets/icons/whatsapp.png"
+              alt="Whatsapp"
+            />
+          </a>
+        </div>
+
+        <div class="logoRedesSociales">
+          <a href="https://www.facebook.com" target="_blank">
+            <img
+              class="iconosRedes"
+              src="../assets/icons/facebook.png"
+              alt="Facebook"
+            />
+          </a>
+        </div>
+
+        <div class="logoRedesSociales">
+          <a href="https://x.com/?lang=es" target="_blank">
+            <img
+              class="iconosRedes"
+              src="../assets/icons/twiter.png"
+              alt="X (ex twiter)"
+            />
+          </a>
+        </div>
+
+        <div class="logoRedesSociales">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              class="iconosRedes"
+              src="../assets/icons/instagram.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
